@@ -8,17 +8,16 @@ import br.com.fiap.models.LivroAlerta;
 public class Teste {
 	
 	public static void main(String[] args) {
-		Biblioteca bibli = new Biblioteca();
+		
+		Biblioteca bibli = Biblioteca.getInstance("FIAP Biblioteca");
 		Aluno aluno1 = new Aluno(1, "Vinicius");
-		Livro livr1 = new Livro("Livro A", "John", 2, true);
+		Livro livr1 = new Livro("Poemas de Alvaro de Campos", "Fernando Pessoa", 2, true);
 		livr1.addObserver(new LivroAlerta());
 		
 		bibli.registro(livr1);
 		bibli.devolucao(livr1);
 		
-		System.out.println(aluno1.getNome());
 		
 	}
-	
 	
 }

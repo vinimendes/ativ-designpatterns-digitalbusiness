@@ -18,10 +18,6 @@ public class Aluno{
 		
 	}
 	
-	
-	
-
-
 
 	public int getId() {
 		return id;
@@ -58,12 +54,5 @@ public class Aluno{
 	}
 
 
-
-
-
-
-	
-	
-	
 	
 }

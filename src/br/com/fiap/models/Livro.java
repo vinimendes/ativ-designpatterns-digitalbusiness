@@ -10,6 +10,7 @@ public class Livro {
 	private long ISBN;
 	private int qtdeDisponivel;
 	private boolean status;
+	private Aluno aluno;
 	
 	private List<ILivroObserver> observers = new ArrayList<ILivroObserver>();
 	
@@ -96,6 +97,16 @@ public class Livro {
 
 	public void setStatus(boolean status) {
 		this.status = status;
+	}
+
+
+	public Aluno getAluno() {
+		return aluno;
+	}
+
+
+	public void setAluno(Aluno aluno) {
+		this.aluno = aluno;
 	}
 	
 	
